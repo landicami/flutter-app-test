@@ -1,7 +1,6 @@
 # friend_advisor
 
-- Camilla Landin FED23M -
-  This is my exam-project for front end developer program in Medieinstitutet Malmö 2023-2025.
+- Camilla Landin  -
 
 A new Flutter project.
 
