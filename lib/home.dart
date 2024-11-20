@@ -10,13 +10,13 @@ class Home extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: const Text(
-            'TravelWise',
+            'Lassi P',
             style: TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.bold,
             ),
           ),
-          backgroundColor: Colors.blueGrey[600],
+          backgroundColor: Colors.amber[600],
           centerTitle: true,
         ),
         body: Column(
@@ -26,8 +26,8 @@ class Home extends StatelessWidget {
                 color: Colors.black,
                 padding: const EdgeInsets.all(20),
                 child: const StyledBodyText('How I like my team')),
-            const SizedBox(
-                height: 16), // 16 är en vanlig spacing i Material Design
+            // const SizedBox(
+            //     height: 16), // 16 är en vanlig spacing i Material Design
 
             Container(
                 decoration: BoxDecoration(

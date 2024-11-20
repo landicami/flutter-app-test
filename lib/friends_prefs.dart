@@ -46,7 +46,11 @@ class _FriendsPrefsState extends State<FriendsPrefs> {
           const StyledBodyText('Cuteness: '),
           Text('$sugars'),
           const Expanded(child: SizedBox()),
-          if (sugars == 0) const Text('No cuties'),
+          if (sugars == 0)
+            const Text(
+              'No cuties',
+              style: TextStyle(color: Colors.white),
+            ),
           for (int i = 0; i < sugars; i++)
             Padding(
               padding: const EdgeInsets.only(right: 8),
