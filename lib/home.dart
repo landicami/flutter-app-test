@@ -31,7 +31,7 @@ class Home extends StatelessWidget {
 
             Container(
                 decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: Colors.black,
                     border: Border.all(
                       color: Colors.black,
                       width: 2,

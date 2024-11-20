@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:friend_advisor/styled_body_text.dart';
+import 'package:friend_advisor/styled_button.dart';
 
 class FriendsPrefs extends StatefulWidget {
   const FriendsPrefs({super.key});
@@ -28,7 +30,7 @@ class _FriendsPrefsState extends State<FriendsPrefs> {
     return Column(
       children: [
         Row(children: [
-          const Text('Team-spirit: '),
+          const StyledBodyText('Team-spirit: '),
           Text('$strength'),
           const Expanded(child: SizedBox()),
           for (int i = 0; i < strength; i++)
@@ -37,15 +39,11 @@ class _FriendsPrefsState extends State<FriendsPrefs> {
               width: 25,
             ),
           const SizedBox(width: 8),
-          FilledButton(
-              style: FilledButton.styleFrom(
-                  backgroundColor: Colors.blue[50],
-                  foregroundColor: Colors.black),
-              onPressed: increaseStrength,
-              child: const Text('Press me')),
+          StyledButton(
+              onPressed: increaseStrength, child: const Text('Press me')),
         ]),
         Row(children: [
-          const Text('Cuteness: '),
+          const StyledBodyText('Cuteness: '),
           Text('$sugars'),
           const Expanded(child: SizedBox()),
           if (sugars == 0) const Text('No cuties'),
@@ -58,11 +56,8 @@ class _FriendsPrefsState extends State<FriendsPrefs> {
               ),
             ),
           const SizedBox(width: 8),
-          FilledButton(
-              style: FilledButton.styleFrom(
-                  backgroundColor: Colors.white, foregroundColor: Colors.black),
-              onPressed: increaseSugars,
-              child: const Text('Press me')),
+          StyledButton(
+              onPressed: increaseSugars, child: const Text('Press me')),
         ]),
       ],
     );
